@@ -1,5 +1,9 @@
-html {
+html, body {
   min-height: 100%;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%:
 }
 
 body {
@@ -263,6 +267,105 @@ ADD RECORD
     position: fixed;
     bottom: 30px;
     left: calc(50% - 100px);
+}
+
+form {
+  margin-top: 16px;
+  padding: 16px 24px;
+}
+
+input[type=text], select, textarea {
+  width: 100% !important;
+  padding: 12px 12px;
+  margin: 6px 0 16px;
+  font-size: 20px;
+  border-radius: 3px;
+  border: 2px solid #D7D6D9;
+}
+
+input[type=time] {
+  width: 40%;
+  padding: 10px 10px;
+  margin: 6px 0 16px;
+  font-size: 20px;
+  border-radius: 3px;
+  border: 2px solid #D7D6D9;
+  background-color: #ffffff;
+  clear: both;
+}
+
+label {
+  /*text-transform: uppercase;*/
+  font-size: 16px;
+  font-weight: 600;
+}
+
+::-webkit-input-placeholder {
+  font-size: 20px;
+  color: #BFBDC1;
+}
+
+.city {
+  width: 75%;
+  float: left;
+  margin-right: 12px;
+}
+
+.state {
+  width: 20%;
+  float: left;
+}
+
+.profile label {
+  padding-bottom: 24px;
+}
+
+.selectdiv {
+  position: relative;
+}
+
+.selectdiv:after {
+  /*content: '<>';
+  font: 17px "Consolas", monospace;*/
+  background-image: url(img/caret-down-black.png) no-repeat 294px 14px;
+  color: #333;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  left: 110px;
+  top: 40px;
+  padding: 0 0 2px;
+  border-bottom: 1px solid #999;
+  /*left line */
+  
+  position: absolute;
+  pointer-events: none;
+}
+
+.selectdiv select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  text-indent: 0.01px;
+  text-overflow: '';
+  /* Add some styling */
+  
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  height: 50px;
+  float: right;
+  margin: 5px 0px;
+  padding: 0px 24px;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #333;
+  background-color: #ffffff;
+  background: url(img/caret-down-black.png) no-repeat 12px 8px;
+  border: 1px solid #cccccc;
+  -ms-word-break: normal;
+  word-break: normal;
 }
 
 
